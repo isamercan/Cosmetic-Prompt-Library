@@ -1,0 +1,2768 @@
+{
+    "options": {
+      "lighting": [
+        "Natural daylight",
+        "Studio softbox",
+        "Golden hour",
+        "Dramatic chiaroscuro",
+        "High-key lighting",
+        "Low-key lighting",
+        "Backlight",
+        "Rim light",
+        "Soft diffused light",
+        "Hard directional light",
+        "Fluorescent light",
+        "Neon glow",
+        "Cinematic lighting",
+        "Ambient light",
+        "Volumetric lighting",
+        "Splash light",
+        "Shadow play",
+        "Softbox with fill light",
+        "Contour lighting",
+        "Spotlight"
+      ],
+      "scenes": [
+        "A luxurious, ancient marble slab with subtle veins, surrounded by delicate, dew-kissed silk drapes and scattered emerald-green fern leaves, with a backdrop of a softly blurred, sun-drenched botanical garden, casting gentle, elongated shadows.",
+        "A sleek, obsidian pedestal with sharp, clean edges, set within a vast, softly glowing futuristic chamber. Holographic blue and purple light beams subtly intersect, creating an ethereal, high-tech atmosphere.",
+        "Product partially submerged in a pristine, crystal-clear pool of water, where gentle ripples create mesmerizing light patterns. The background is a serene, sunlit waterfall cascading into a tranquil lagoon, evoking purity and freshness.",
+        "Product nestled among an opulent arrangement of vibrant, exotic orchids and cascading, iridescent silk ribbons. The scene is bathed in a warm, diffused light, highlighting the textures and creating a sense of delicate luxury.",
+        "Product on a highly polished, dark chrome surface, reflecting subtle, shifting neon light glows from a blurred, rain-slicked cyberpunk city street at night. The atmosphere is edgy and modern.",
+        "Product in a tranquil, sun-dappled forest clearing. Diffused sunlight filters through a canopy of ancient, lush green leaves, creating a misty, dreamlike backdrop that emphasizes natural beauty and serenity.",
+        "Product elegantly positioned on a pristine white marble plinth, surrounded by an array of abstract, sculptural glass elements that refract light into subtle rainbows. Sharp, artistic shadows play across the scene, adding depth and sophistication.",
+        "Product showcased in a pristine, high-tech laboratory environment, with blurred, glowing scientific instruments and intricate circuit patterns in the background, emphasizing precision, innovation, and cutting-edge research.",
+        "Product floating weightlessly against a breathtaking backdrop of a swirling cosmic nebula, with vibrant blues, purples, and pinks, and distant, twinkling stars, highlighting an otherworldly and expansive theme.",
+        "Product resting on a crystalline, icy surface, with intricate frost patterns and sharp, reflective facets. The atmosphere is cool, ethereal, and pristine, with subtle blue and white light reflections.",
+        "Product gently placed on a bed of soft, ethereal white clouds, with a vast, clear azure sky stretching infinitely in the background, creating a dreamlike, weightless, and aspirational quality.",
+        "Product dramatically set on a piece of rugged, dark volcanic rock, contrasting sharply with a few delicate, vibrant red floral elements. The scene is under a moody, overcast sky, evoking raw power and subtle beauty.",
+        "Product displayed within a dynamic, abstract art gallery setting. The background features blurred, expressive brushstrokes in bold, complementary colors, giving a sense of artistic flair and modern elegance.",
+        "Product carefully positioned on a pristine, golden sandy beach at the soft glow of sunrise. Warm, inviting light baths the scene, with gentle, shimmering ocean waves in the far distance, creating a peaceful and natural ambiance.",
+        "Product encapsulated within a transparent, iridescent bubble-like enclosure, seemingly floating in a vast, minimalist, and airy white space, emphasizing its preciousness and unique form.",
+        "Product on a dark, highly reflective obsidian surface, with sharp, focused spotlights creating dramatic contrasts and intense, deep shadows that highlight its contours and texture.",
+        "Product surrounded by an array of glowing, fantastical bioluminescent flora in a mystical, dimly lit twilight forest. Soft, magical glows illuminate the product, creating an enchanting and otherworldly atmosphere.",
+        "Product on a warm, inviting rustic wooden table, with blurred, cozy kitchen elements like ceramic bowls and fresh herbs in the background, suggesting natural ingredients and a comforting, wholesome feel.",
+        "Product placed in a luxurious, softly lit spa environment. Blurred elements like plush white towels, steaming hot stones, and delicate aromatherapy diffusers in the background evoke deep relaxation and pampering.",
+        "Product presented on a futuristic, illuminated grid, where glowing lines extend into a dark, infinite void. The design emphasizes precision, technology, and a sense of boundless possibility."
+      ],
+      "moodEmotions": [
+        "Theme: Freshness, authenticity, simplicity - Message: Enhancing natural beauty with a touch of serene purity.",
+        "Theme: Luxury, sophistication, elegance - Message: Indulge in timeless beauty and refined allure.",
+        "Theme: Vibrancy, energy, playfulness - Message: Unleash your inner radiance with joyful confidence.",
+        "Theme: Calm, serenity, wellness - Message: Find your inner peace and tranquil glow.",
+        "Theme: Boldness, innovation, futurism - Message: Redefine beauty standards with visionary appeal.",
+        "Theme: Empowerment, confidence, strength - Message: Embrace your power, radiate self-assurance.",
+        "Theme: Mystery, allure, enchantment - Message: Discover the magic within, captivating all senses.",
+        "Theme: Purity, innocence, delicate touch - Message: Experience gentle care and pristine charm.",
+        "Theme: Adventure, freedom, exploration - Message: Journey to boundless beauty horizons.",
+        "Theme: Harmony, balance, natural flow - Message: Align with nature, achieve perfect equilibrium.",
+        "Theme: Passion, intensity, desire - Message: Ignite your senses, awaken your deepest desires.",
+        "Theme: Nostalgia, classic charm, heritage - Message: Revisit timeless elegance, cherish enduring grace.",
+        "Theme: Minimalism, clarity, essentialism - Message: Embrace simplicity, reveal true essence.",
+        "Theme: Transformation, renewal, rebirth - Message: Unveil a new you, a fresh beginning.",
+        "Theme: Connection, empathy, warmth - Message: Feel the gentle embrace of shared beauty.",
+        "Theme: Celebration, joy, festivity - Message: Illuminate your moments with vibrant happiness.",
+        "Theme: Dreamy, ethereal, whimsical - Message: Step into a world of enchanting fantasy.",
+        "Theme: Grounding, earthy, organic - Message: Root yourself in natural goodness and vitality.",
+        "Theme: Artistic, expressive, creative - Message: Paint your world with unique beauty.",
+        "Theme: Resilience, protection, strength - Message: Fortify your beauty, stand firm and radiant."
+      ],
+      "fontStyles": [
+        "Modern serif",
+        "Elegant sans-serif",
+        "Minimalist geometric",
+        "Art Deco inspired",
+        "Handwritten script"
+      ],
+      "fontColors": [
+        "Natural tones",
+        "Soft pastels",
+        "Metallic gradients",
+        "Vibrant neon",
+        "Monochromatic"
+      ],
+      "resolutions": [
+        "4K",
+        "8K",
+        "Full HD"
+      ],
+      "framings": [
+        "Portrait",
+        "Close-up",
+        "Wide shot",
+        "Dynamic angle",
+        "Flat lay"
+      ],
+      "outputStyles": [
+        "Visual Quality: Commercial-grade clarity - Realism Rule: High-fidelity photo realism",
+        "Visual Quality: Artistic interpretation - Realism Rule: Painterly realism",
+        "Visual Quality: Hyper-realistic - Realism Rule: Cinematic grade",
+        "Visual Quality: Soft focus - Realism Rule: Dreamlike quality",
+        "Visual Quality: Sharp, crisp - Realism Rule: Editorial style"
+      ]
+    },
+    "creativeNames": [
+      "Aurora Glow",
+      "Zenith Bloom",
+      "Lunar Radiance",
+      "Velvet Mist",
+      "Crystal Dew",
+      "Ethereal Silk",
+      "Terra Whisper",
+      "Solar Kiss",
+      "Oceanic Serenity",
+      "Stardust Veil",
+      "Mystic Bloom",
+      "Glimmering Stone",
+      "Aqua Aura",
+      "Chromatic Dream",
+      "Cosmic Petal",
+      "Infinite Fresh",
+      "Echoing Light",
+      "Silent Stream",
+      "Celestial Touch",
+      "Timeless Essence"
+    ],
+    "prompts": [
+      {
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+        "promptTitleIndex": 0,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 0
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 0,
+        "moodEmotionIndex": 0,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef0",
+        "promptTitleIndex": 1,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 1
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 1,
+        "moodEmotionIndex": 1,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef01",
+        "promptTitleIndex": 2,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 2
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 2,
+        "moodEmotionIndex": 2,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "d4e5f6a7-b8c9-0123-4567-890abcdef012",
+        "promptTitleIndex": 3,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 3
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 3,
+        "moodEmotionIndex": 3,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "e5f6a7b8-c9d0-1234-5678-90abcdef0123",
+        "promptTitleIndex": 4,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 4
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 4,
+        "moodEmotionIndex": 4,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "f6a7b8c9-d0e1-2345-6789-0abcdef01234",
+        "promptTitleIndex": 5,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 5
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 5,
+        "moodEmotionIndex": 5,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "a7b8c9d0-e1f2-3456-7890-abcdef012345",
+        "promptTitleIndex": 6,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 6
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 6,
+        "moodEmotionIndex": 6,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "b8c9d0e1-f2a3-4567-8901-abcdef0123456",
+        "promptTitleIndex": 7,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 7
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 7,
+        "moodEmotionIndex": 7,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "c9d0e1f2-a3b4-5678-9012-abcdef01234567",
+        "promptTitleIndex": 8,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 8
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 8,
+        "moodEmotionIndex": 8,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "d0e1f2a3-b4c5-6789-0123-4abcdef0123456",
+        "promptTitleIndex": 9,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 9
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 9,
+        "moodEmotionIndex": 9,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "e1f2a3b4-c5d6-7890-1234-5abcdef01234567",
+        "promptTitleIndex": 10,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 10
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 10,
+        "moodEmotionIndex": 10,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "f2a3b4c5-d6e7-8901-2345-6abcdef012345678",
+        "promptTitleIndex": 11,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 11
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 11,
+        "moodEmotionIndex": 11,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "a3b4c5d6-e7f8-9012-3456-7abcdef0123456789",
+        "promptTitleIndex": 12,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 12
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 12,
+        "moodEmotionIndex": 12,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "b4c5d6e7-f8a9-0123-4567-8abcdef01234567890",
+        "promptTitleIndex": 13,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 13
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 13,
+        "moodEmotionIndex": 13,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "c5d6e7f8-a9b0-1234-5678-9abcdef012345678901",
+        "promptTitleIndex": 14,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 14
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 14,
+        "moodEmotionIndex": 14,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "d6e7f8a9-b0c1-2345-6789-0abcdef0123456789012",
+        "promptTitleIndex": 15,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 15
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 15,
+        "moodEmotionIndex": 15,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "e7f8a9b0-c1d2-3456-7890-1abcdef01234567890123",
+        "promptTitleIndex": 16,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 16
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 16,
+        "moodEmotionIndex": 16,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "f8a9b0c1-d2e3-4567-8901-2abcdef012345678901234",
+        "promptTitleIndex": 17,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 17
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 17,
+        "moodEmotionIndex": 17,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "a9b0c1d2-e3f4-5678-9012-3abcdef0123456789012345",
+        "promptTitleIndex": 18,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 18
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 18,
+        "moodEmotionIndex": 18,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "b0c1d2e3-f4a5-6789-0123-4abcdef01234567890123456",
+        "promptTitleIndex": 19,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 19
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 19,
+        "moodEmotionIndex": 19,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "c1d2e3f4-a5b6-7890-1234-5abcdef01234567890123457",
+        "promptTitleIndex": 0,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 0
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 0,
+        "moodEmotionIndex": 0,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "d2e3f4a5-b6c7-8901-2345-6abcdef01234567890123458",
+        "promptTitleIndex": 1,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 1
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 1,
+        "moodEmotionIndex": 1,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "e3f4a5b6-c7d8-9012-3456-7abcdef01234567890123459",
+        "promptTitleIndex": 2,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 2
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 2,
+        "moodEmotionIndex": 2,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "f4a5b6c7-d8e9-0123-4567-8abcdef01234567890123460",
+        "promptTitleIndex": 3,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 3
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 3,
+        "moodEmotionIndex": 3,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "a5b6c7d8-e9f0-1234-5678-9abcdef01234567890123461",
+        "promptTitleIndex": 4,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 4
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 4,
+        "moodEmotionIndex": 4,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "b6c7d8e9-f0a1-2345-6789-0abcdef01234567890123462",
+        "promptTitleIndex": 5,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 5
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 5,
+        "moodEmotionIndex": 5,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "c7d8e9f0-a1b2-3456-7890-1abcdef01234567890123463",
+        "promptTitleIndex": 6,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 6
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 6,
+        "moodEmotionIndex": 6,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "d8e9f0a1-b2c3-4567-8901-2abcdef01234567890123464",
+        "promptTitleIndex": 7,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 7
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 7,
+        "moodEmotionIndex": 7,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "e9f0a1b2-c3d4-5678-9012-3abcdef01234567890123465",
+        "promptTitleIndex": 8,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 8
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 8,
+        "moodEmotionIndex": 8,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "f0a1b2c3-d4e5-6789-0123-4abcdef01234567890123466",
+        "promptTitleIndex": 9,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 9
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 9,
+        "moodEmotionIndex": 9,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef67",
+        "promptTitleIndex": 10,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 10
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 10,
+        "moodEmotionIndex": 10,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef68",
+        "promptTitleIndex": 11,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 11
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 11,
+        "moodEmotionIndex": 11,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef69",
+        "promptTitleIndex": 12,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 12
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 12,
+        "moodEmotionIndex": 12,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "d4e5f6a7-b8c9-0123-4567-890abcdef70",
+        "promptTitleIndex": 13,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 13
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 13,
+        "moodEmotionIndex": 13,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "e5f6a7b8-c9d0-1234-5678-90abcdef71",
+        "promptTitleIndex": 14,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 14
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 14,
+        "moodEmotionIndex": 14,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "f6a7b8c9-d0e1-2345-6789-0abcdef72",
+        "promptTitleIndex": 15,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 15
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 15,
+        "moodEmotionIndex": 15,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "a7b8c9d0-e1f2-3456-7890-abcdef73",
+        "promptTitleIndex": 16,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 16
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 16,
+        "moodEmotionIndex": 16,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "b8c9d0e1-f2a3-4567-8901-abcdef74",
+        "promptTitleIndex": 17,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 17
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 17,
+        "moodEmotionIndex": 17,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "c9d0e1f2-a3b4-5678-9012-abcdef75",
+        "promptTitleIndex": 18,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 18
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 18,
+        "moodEmotionIndex": 18,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "d0e1f2a3-b4c5-6789-0123-4abcdef76",
+        "promptTitleIndex": 19,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 19
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 19,
+        "moodEmotionIndex": 19,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "e1f2a3b4-c5d6-7890-1234-5abcdef77",
+        "promptTitleIndex": 0,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 0
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 0,
+        "moodEmotionIndex": 0,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "f2a3b4c5-d6e7-8901-2345-6abcdef78",
+        "promptTitleIndex": 1,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 1
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 1,
+        "moodEmotionIndex": 1,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "a3b4c5d6-e7f8-9012-3456-7abcdef79",
+        "promptTitleIndex": 2,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 2
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 2,
+        "moodEmotionIndex": 2,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "b4c5d6e7-f8a9-0123-4567-8abcdef80",
+        "promptTitleIndex": 3,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 3
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 3,
+        "moodEmotionIndex": 3,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "c5d6e7f8-a9b0-1234-5678-9abcdef81",
+        "promptTitleIndex": 4,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 4
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 4,
+        "moodEmotionIndex": 4,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "d6e7f8a9-b0c1-2345-6789-0abcdef82",
+        "promptTitleIndex": 5,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 5
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 5,
+        "moodEmotionIndex": 5,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "e7f8a9b0-c1d2-3456-7890-abcdef83",
+        "promptTitleIndex": 6,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 6
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 6,
+        "moodEmotionIndex": 6,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "f8a9b0c1-d2e3-4567-8901-abcdef84",
+        "promptTitleIndex": 7,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 7
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 7,
+        "moodEmotionIndex": 7,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "a9b0c1d2-e3f4-5678-9012-abcdef85",
+        "promptTitleIndex": 8,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 8
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 8,
+        "moodEmotionIndex": 8,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "b0c1d2e3-f4a5-6789-0123-4abcdef86",
+        "promptTitleIndex": 9,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 9
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 9,
+        "moodEmotionIndex": 9,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "c1d2e3f4-a5b6-7890-1234-5abcdef87",
+        "promptTitleIndex": 10,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 10
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 10,
+        "moodEmotionIndex": 10,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "d2e3f4a5-b6c7-8901-2345-6abcdef88",
+        "promptTitleIndex": 11,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 11
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 11,
+        "moodEmotionIndex": 11,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "e3f4a5b6-c7d8-9012-3456-7abcdef89",
+        "promptTitleIndex": 12,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 12
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 12,
+        "moodEmotionIndex": 12,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "f4a5b6c7-d8e9-0123-4567-8abcdef90",
+        "promptTitleIndex": 13,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 13
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 13,
+        "moodEmotionIndex": 13,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "a5b6c7d8-e9f0-1234-5678-9abcdef91",
+        "promptTitleIndex": 14,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 14
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 14,
+        "moodEmotionIndex": 14,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "b6c7d8e9-f0a1-2345-6789-0abcdef92",
+        "promptTitleIndex": 15,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 15
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 15,
+        "moodEmotionIndex": 15,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "c7d8e9f0-a1b2-3456-7890-1abcdef93",
+        "promptTitleIndex": 16,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 16
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 16,
+        "moodEmotionIndex": 16,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "d8e9f0a1-b2c3-4567-8901-2abcdef94",
+        "promptTitleIndex": 17,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 17
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 17,
+        "moodEmotionIndex": 17,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "e9f0a1b2-c3d4-5678-9012-3abcdef95",
+        "promptTitleIndex": 18,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 18
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 18,
+        "moodEmotionIndex": 18,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "f0a1b2c3-d4e5-6789-0123-4abcdef96",
+        "promptTitleIndex": 19,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 19
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 19,
+        "moodEmotionIndex": 19,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef97",
+        "promptTitleIndex": 0,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 0
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 0,
+        "moodEmotionIndex": 0,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef98",
+        "promptTitleIndex": 1,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 1
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 1,
+        "moodEmotionIndex": 1,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef99",
+        "promptTitleIndex": 2,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 2
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 2,
+        "moodEmotionIndex": 2,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "d4e5f6a7-b8c9-0123-4567-890abcdef100",
+        "promptTitleIndex": 3,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 3
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 3,
+        "moodEmotionIndex": 3,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "e5f6a7b8-c9d0-1234-5678-90abcdef101",
+        "promptTitleIndex": 4,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 4
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 4,
+        "moodEmotionIndex": 4,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "f6a7b8c9-d0e1-2345-6789-0abcdef102",
+        "promptTitleIndex": 5,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 5
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 5,
+        "moodEmotionIndex": 5,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "a7b8c9d0-e1f2-3456-7890-abcdef103",
+        "promptTitleIndex": 6,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 6
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 6,
+        "moodEmotionIndex": 6,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "b8c9d0e1-f2a3-4567-8901-abcdef104",
+        "promptTitleIndex": 7,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 7
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 7,
+        "moodEmotionIndex": 7,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "c9d0e1f2-a3b4-5678-9012-abcdef105",
+        "promptTitleIndex": 8,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 8
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 8,
+        "moodEmotionIndex": 8,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "d0e1f2a3-b4c5-6789-0123-4abcdef106",
+        "promptTitleIndex": 9,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 9
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 9,
+        "moodEmotionIndex": 9,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "e1f2a3b4-c5d6-7890-1234-5abcdef107",
+        "promptTitleIndex": 10,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 10
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 10,
+        "moodEmotionIndex": 10,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "f2a3b4c5-d6e7-8901-2345-6abcdef108",
+        "promptTitleIndex": 11,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 11
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 11,
+        "moodEmotionIndex": 11,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "a3b4c5d6-e7f8-9012-3456-7abcdef109",
+        "promptTitleIndex": 12,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 12
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 12,
+        "moodEmotionIndex": 12,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "b4c5d6e7-f8a9-0123-4567-8abcdef110",
+        "promptTitleIndex": 13,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 13
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 13,
+        "moodEmotionIndex": 13,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "c5d6e7f8-a9b0-1234-5678-9abcdef111",
+        "promptTitleIndex": 14,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 14
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 14,
+        "moodEmotionIndex": 14,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "d6e7f8a9-b0c1-2345-6789-0abcdef112",
+        "promptTitleIndex": 15,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 15
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 15,
+        "moodEmotionIndex": 15,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "e7f8a9b0-c1d2-3456-7890-1abcdef113",
+        "promptTitleIndex": 16,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 16
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 16,
+        "moodEmotionIndex": 16,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "f8a9b0c1-d2e3-4567-8901-2abcdef114",
+        "promptTitleIndex": 17,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 17
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 17,
+        "moodEmotionIndex": 17,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "a9b0c1d2-e3f4-5678-9012-3abcdef115",
+        "promptTitleIndex": 18,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 18
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 18,
+        "moodEmotionIndex": 18,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "b0c1d2e3-f4a5-6789-0123-4abcdef116",
+        "promptTitleIndex": 19,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 19
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 19,
+        "moodEmotionIndex": 19,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "c1d2e3f4-a5b6-7890-1234-5abcdef117",
+        "promptTitleIndex": 0,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 0
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 0,
+        "moodEmotionIndex": 0,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "d2e3f4a5-b6c7-8901-2345-6abcdef118",
+        "promptTitleIndex": 1,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 1
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 1,
+        "moodEmotionIndex": 1,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "e3f4a5b6-c7d8-9012-3456-7abcdef119",
+        "promptTitleIndex": 2,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 2
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 2,
+        "moodEmotionIndex": 2,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "f4a5b6c7-d8e9-0123-4567-8abcdef120",
+        "promptTitleIndex": 3,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 3
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 3,
+        "moodEmotionIndex": 3,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "a5b6c7d8-e9f0-1234-5678-9abcdef121",
+        "promptTitleIndex": 4,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 4
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 4,
+        "moodEmotionIndex": 4,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "b6c7d8e9-f0a1-2345-6789-0abcdef122",
+        "promptTitleIndex": 5,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 5
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 5,
+        "moodEmotionIndex": 5,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "c7d8e9f0-a1b2-3456-7890-1abcdef123",
+        "promptTitleIndex": 6,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 6
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 6,
+        "moodEmotionIndex": 6,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "d8e9f0a1-b2c3-4567-8901-2abcdef124",
+        "promptTitleIndex": 7,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 7
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 7,
+        "moodEmotionIndex": 7,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "e9f0a1b2-c3d4-5678-9012-3abcdef125",
+        "promptTitleIndex": 8,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 8
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 8,
+        "moodEmotionIndex": 8,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "f0a1b2c3-d4e5-6789-0123-4abcdef126",
+        "promptTitleIndex": 9,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 9
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 9,
+        "moodEmotionIndex": 9,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef127",
+        "promptTitleIndex": 10,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 10
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 10,
+        "moodEmotionIndex": 10,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef128",
+        "promptTitleIndex": 11,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 11
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 11,
+        "moodEmotionIndex": 11,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef129",
+        "promptTitleIndex": 12,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 12
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 12,
+        "moodEmotionIndex": 12,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "d4e5f6a7-b8c9-0123-4567-890abcdef130",
+        "promptTitleIndex": 13,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 13
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 13,
+        "moodEmotionIndex": 13,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "e5f6a7b8-c9d0-1234-5678-90abcdef131",
+        "promptTitleIndex": 14,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 14
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 14,
+        "moodEmotionIndex": 14,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "f6a7b8c9-d0e1-2345-6789-0abcdef132",
+        "promptTitleIndex": 15,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 15
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 15,
+        "moodEmotionIndex": 15,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "a7b8c9d0-e1f2-3456-7890-abcdef133",
+        "promptTitleIndex": 16,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 16
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 16,
+        "moodEmotionIndex": 16,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "b8c9d0e1-f2a3-4567-8901-abcdef134",
+        "promptTitleIndex": 17,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 17
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 17,
+        "moodEmotionIndex": 17,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "c9d0e1f2-a3b4-5678-9012-abcdef135",
+        "promptTitleIndex": 18,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 18
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 18,
+        "moodEmotionIndex": 18,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "d0e1f2a3-b4c5-6789-0123-4abcdef136",
+        "promptTitleIndex": 19,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 19
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 19,
+        "moodEmotionIndex": 19,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "e1f2a3b4-c5d6-7890-1234-5abcdef137",
+        "promptTitleIndex": 0,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 0
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 0,
+        "moodEmotionIndex": 0,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "f2a3b4c5-d6e7-8901-2345-6abcdef138",
+        "promptTitleIndex": 1,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 1
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 1,
+        "moodEmotionIndex": 1,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "a3b4c5d6-e7f8-9012-3456-7abcdef139",
+        "promptTitleIndex": 2,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 2
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 2,
+        "moodEmotionIndex": 2,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "b4c5d6e7-f8a9-0123-4567-8abcdef140",
+        "promptTitleIndex": 3,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 3
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 3,
+        "moodEmotionIndex": 3,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "c5d6e7f8-a9b0-1234-5678-9abcdef141",
+        "promptTitleIndex": 4,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 4
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 4,
+        "moodEmotionIndex": 4,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "d6e7f8a9-b0c1-2345-6789-0abcdef142",
+        "promptTitleIndex": 5,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 5
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 5,
+        "moodEmotionIndex": 5,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "e7f8a9b0-c1d2-3456-7890-1abcdef143",
+        "promptTitleIndex": 6,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 6
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 6,
+        "moodEmotionIndex": 6,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "f8a9b0c1-d2e3-4567-8901-2abcdef144",
+        "promptTitleIndex": 7,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 7
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 7,
+        "moodEmotionIndex": 7,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "a9b0c1d2-e3f4-5678-9012-3abcdef145",
+        "promptTitleIndex": 8,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 8
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 8,
+        "moodEmotionIndex": 8,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "b0c1d2e3-f4a5-6789-0123-4abcdef146",
+        "promptTitleIndex": 9,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 9
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 9,
+        "moodEmotionIndex": 9,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "c1d2e3f4-a5b6-7890-1234-5abcdef147",
+        "promptTitleIndex": 10,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 0,
+          "lightingIndex": 10
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 10,
+        "moodEmotionIndex": 10,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "d2e3f4a5-b6c7-8901-2345-6abcdef148",
+        "promptTitleIndex": 11,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 1,
+          "lightingIndex": 11
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 11,
+        "moodEmotionIndex": 11,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "e3f4a5b6-c7d8-9012-3456-7abcdef149",
+        "promptTitleIndex": 12,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 2,
+          "lightingIndex": 12
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 12,
+        "moodEmotionIndex": 12,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "f4a5b6c7-d8e9-0123-4567-8abcdef150",
+        "promptTitleIndex": 13,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 3,
+          "lightingIndex": 13
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 13,
+        "moodEmotionIndex": 13,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "a5b6c7d8-e9f0-1234-5678-9abcdef151",
+        "promptTitleIndex": 14,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 4,
+          "lightingIndex": 14
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 14,
+        "moodEmotionIndex": 14,
+        "outputStyleIndex": 4
+      },
+      {
+        "id": "b6c7d8e9-f0a1-2345-6789-0abcdef152",
+        "promptTitleIndex": 15,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 0,
+          "fontColorIndex": 0,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 0,
+          "lightingIndex": 15
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 15,
+        "moodEmotionIndex": 15,
+        "outputStyleIndex": 0
+      },
+      {
+        "id": "c7d8e9f0-a1b2-3456-7890-1abcdef153",
+        "promptTitleIndex": 16,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 1,
+          "fontColorIndex": 1,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 1,
+          "lightingIndex": 16
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 16,
+        "moodEmotionIndex": 16,
+        "outputStyleIndex": 1
+      },
+      {
+        "id": "d8e9f0a1-b2c3-4567-8901-2abcdef154",
+        "promptTitleIndex": 17,
+        "parameters": {
+          "aspectRatio": "16:9",
+          "fontStyleIndex": 2,
+          "fontColorIndex": 2,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 2,
+          "lightingIndex": 17
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 17,
+        "moodEmotionIndex": 17,
+        "outputStyleIndex": 2
+      },
+      {
+        "id": "e9f0a1b2-c3d4-5678-9012-3abcdef155",
+        "promptTitleIndex": 18,
+        "parameters": {
+          "aspectRatio": "1:1",
+          "fontStyleIndex": 3,
+          "fontColorIndex": 3,
+          "resolutionIndex": 0,
+          "cameraLens": "85mm",
+          "framingIndex": 3,
+          "lightingIndex": 18
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 18,
+        "moodEmotionIndex": 18,
+        "outputStyleIndex": 3
+      },
+      {
+        "id": "f0a1b2c3-d4e5-6789-0123-4abcdef156",
+        "promptTitleIndex": 19,
+        "parameters": {
+          "aspectRatio": "4:5",
+          "fontStyleIndex": 4,
+          "fontColorIndex": 4,
+          "resolutionIndex": 0,
+          "cameraLens": "50mm",
+          "framingIndex": 4,
+          "lightingIndex": 19
+        },
+        "promptDescription": "Create a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.",
+        "productIntegrityRequirements": [
+          "Use the uploaded product image exactly as it is.",
+          "Do not change the label, shape, or design.",
+          "Preserve original lighting, text, and reflections."
+        ],
+        "sceneDescriptionIndex": 19,
+        "moodEmotionIndex": 19,
+        "outputStyleIndex": 4
+      }
+    ]
+  }
+  

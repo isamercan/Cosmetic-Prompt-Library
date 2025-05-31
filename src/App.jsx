@@ -1,5 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Copy, ChevronDown, Rocket } from 'lucide-react'; // Importing icons
+import React, { useState, useEffect, useCallback } from 'react';
+import { Copy, ChevronDown as ChevronDownIcon, Rocket, Dice5, ChevronUp as ChevronUpIcon } from 'lucide-react';
+
+// Helper function to shuffle an array
+const shuffleArray = (array) => {
+  let currentIndex = array.length, randomIndex;
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+  }
+  return array;
+};
 
 // Main App component
 const App = () => {
@@ -12,174 +23,144 @@ const App = () => {
   // State to hold the selected lighting style
   const [selectedLighting, setSelectedLighting] = useState('DEFAULT_PROMPT_LIGHTING'); 
 
-  // Removed states for selectedFontStyle, selectedFontColor, selectedResolution, selectedFraming, selectedOutputStyle
+  // State to trigger re-randomization for "Default (Per Prompt)" options
+  const [randomizeKey, setRandomizeKey] = useState(0);
 
-  // Default lighting options array for each prompt
-  const defaultPromptLightingOptions = [
-    'Natural daylight', 'Studio softbox', 'Golden hour', 'Dramatic chiaroscuro',
-    'High-key lighting', 'Low-key lighting', 'Backlight', 'Rim light',
-    'Soft diffused light', 'Hard directional light', 'Fluorescent light', 'Neon glow',
-    'Cinematic lighting', 'Ambient light', 'Volumetric lighting', 'Splash light',
-    'Shadow play', 'Softbox with fill light', 'Contour lighting', 'Spotlight'
-  ];
+  // States to hold the loaded prompt data from JSON
+  const [allPromptsData, setAllPromptsData] = useState(null); // Holds the entire JSON object
+  const [isLoadingOptions, setIsLoadingOptions] = useState(true);
+  const [errorLoadingOptions, setErrorLoadingOptions] = useState(false);
 
-  // Default scene options array for each prompt - MORE DETAILED
-  const defaultPromptSceneOptions = [
-    'A luxurious, ancient marble slab with subtle veins, surrounded by delicate, dew-kissed silk drapes and scattered emerald-green fern leaves, with a backdrop of a softly blurred, sun-drenched botanical garden, casting gentle, elongated shadows.',
-    'A sleek, obsidian pedestal with sharp, clean edges, set within a vast, softly glowing futuristic chamber. Holographic blue and purple light beams subtly intersect, creating an ethereal, high-tech atmosphere.',
-    'Product partially submerged in a pristine, crystal-clear pool of water, where gentle ripples create mesmerizing light patterns. The background is a serene, sunlit waterfall cascading into a tranquil lagoon, evoking purity and freshness.',
-    'Product nestled among an opulent arrangement of vibrant, exotic orchids and cascading, iridescent silk ribbons. The scene is bathed in a warm, diffused light, highlighting the textures and creating a sense of delicate luxury.',
-    'Product on a highly polished, dark chrome surface, reflecting subtle, shifting neon light glows from a blurred, rain-slicked cyberpunk city street at night. The atmosphere is edgy and modern.',
-    'Product in a tranquil, sun-dappled forest clearing. Diffused sunlight filters through a canopy of ancient, lush green leaves, creating a misty, dreamlike backdrop that emphasizes natural beauty and serenity.',
-    'Product elegantly positioned on a pristine white marble plinth, surrounded by an array of abstract, sculptural glass elements that refract light into subtle rainbows. Sharp, artistic shadows play across the scene, adding depth and sophistication.',
-    'Product showcased in a pristine, high-tech laboratory environment, with blurred, glowing scientific instruments and intricate circuit patterns in the background, emphasizing precision, innovation, and cutting-edge research.',
-    'Product floating weightlessly against a breathtaking backdrop of a swirling cosmic nebula, with vibrant blues, purples, and pinks, and distant, twinkling stars, highlighting an otherworldly and expansive theme.',
-    'Product resting on a crystalline, icy surface, with intricate frost patterns and sharp, reflective facets. The atmosphere is cool, ethereal, and pristine, with subtle blue and white light reflections.',
-    'Product gently placed on a bed of soft, ethereal white clouds, with a vast, clear azure sky stretching infinitely in the background, creating a dreamlike, weightless, and aspirational quality.',
-    'Product dramatically set on a piece of rugged, dark volcanic rock, contrasting sharply with a few delicate, vibrant red floral elements. The scene is under a moody, overcast sky, evoking raw power and subtle beauty.',
-    'Product displayed within a dynamic, abstract art gallery setting. The background features blurred, expressive brushstrokes in bold, complementary colors, giving a sense of artistic flair and modern elegance.',
-    'Product carefully positioned on a pristine, golden sandy beach at the soft glow of sunrise. Warm, inviting light bathes the scene, with gentle, shimmering ocean waves in the far distance, creating a peaceful and natural ambiance.',
-    'Product encapsulated within a transparent, iridescent bubble-like enclosure, seemingly floating in a vast, minimalist, and airy white space, emphasizing its preciousness and unique form.',
-    'Product on a dark, highly reflective obsidian surface, with sharp, focused spotlights creating dramatic contrasts and intense, deep shadows that highlight its contours and texture.',
-    'Product surrounded by an array of glowing, fantastical bioluminescent flora in a mystical, dimly lit twilight forest. Soft, magical glows illuminate the product, creating an enchanting and otherworldly atmosphere.',
-    'Product on a warm, inviting rustic wooden table, with blurred, cozy kitchen elements like ceramic bowls and fresh herbs in the background, suggesting natural ingredients and a comforting, wholesome feel.',
-    'Product placed in a luxurious, softly lit spa environment. Blurred elements like plush white towels, steaming hot stones, and delicate aromatherapy diffusers in the background evoke deep relaxation and pampering.',
-    'Product presented on a futuristic, illuminated grid, where glowing lines extend into a dark, infinite void. The design emphasizes precision, technology, and a sense of boundless possibility.'
-  ];
+  // Shuffled versions of the default arrays (used for 'Default (Per Prompt)' randomization)
+  const [shuffledLightingOptions, setShuffledLightingOptions] = useState([]);
+  const [shuffledSceneOptions, setShuffledSceneOptions] = useState([]);
+  const [shuffledMoodEmotionOptions, setShuffledMoodEmotionOptions] = useState([]);
+  const [shuffledFontStyleOptions, setShuffledFontStyleOptions] = useState([]);
+  const [shuffledFontColorOptions, setShuffledFontColorOptions] = useState([]);
+  const [shuffledResolutionOptions, setShuffledResolutionOptions] = useState([]);
+  const [shuffledFramingOptions, setShuffledFramingOptions] = useState([]);
+  const [shuffledOutputStyleOptions, setShuffledOutputStyleOptions] = useState([]);
+  
+  // Creative prompt names array (will be loaded from JSON and potentially shuffled)
+  const [creativePromptNames, setCreativePromptNames] = useState([]);
 
-  // Default mood and emotion options array for each prompt - MORE DETAILED & DYNAMIC
-  const defaultPromptMoodEmotionOptions = [
-    'Theme: Freshness, authenticity, simplicity - Message: Enhancing natural beauty with a touch of serene purity.',
-    'Theme: Luxury, sophistication, elegance - Message: Indulge in timeless beauty and refined allure.',
-    'Theme: Vibrancy, energy, playfulness - Message: Unleash your inner radiance with joyful confidence.',
-    'Theme: Calm, serenity, wellness - Message: Find your inner peace and tranquil glow.',
-    'Theme: Boldness, innovation, futurism - Message: Redefine beauty standards with visionary appeal.',
-    'Theme: Empowerment, confidence, strength - Message: Embrace your power, radiate self-assurance.',
-    'Theme: Mystery, allure, enchantment - Message: Discover the magic within, captivating all senses.',
-    'Theme: Purity, innocence, delicate touch - Message: Experience gentle care and pristine charm.',
-    'Theme: Adventure, freedom, exploration - Message: Journey to boundless beauty horizons.',
-    'Theme: Harmony, balance, natural flow - Message: Align with nature, achieve perfect equilibrium.',
-    'Theme: Passion, intensity, desire - Message: Ignite your senses, awaken your deepest desires.',
-    'Theme: Nostalgia, classic charm, heritage - Message: Revisit timeless elegance, cherish enduring grace.',
-    'Theme: Minimalism, clarity, essentialism - Message: Embrace simplicity, reveal true essence.',
-    'Theme: Transformation, renewal, rebirth - Message: Unveil a new you, a fresh beginning.',
-    'Theme: Connection, empathy, warmth - Message: Feel the gentle embrace of shared beauty.',
-    'Theme: Celebration, joy, festivity - Message: Illuminate your moments with vibrant happiness.',
-    'Theme: Dreamy, ethereal, whimsical - Message: Step into a world of enchanting fantasy.',
-    'Theme: Grounding, earthy, organic - Message: Root yourself in natural goodness and vitality.',
-    'Theme: Artistic, expressive, creative - Message: Paint your world with unique beauty.',
-    'Theme: Resilience, protection, strength - Message: Fortify your beauty, stand firm and radiant.'
-  ];
+  // Inside the App component, before the return statement:
+  const [expandedPrompts, setExpandedPrompts] = useState({});
 
-  // New dynamic parameter option arrays (now only used internally for prompt generation)
-  const defaultPromptFontStyleOptions = [
-    'Modern serif', 'Elegant sans-serif', 'Minimalist geometric', 'Art Deco inspired', 'Handwritten script'
-  ];
-  const defaultPromptFontColorOptions = [
-    'Natural tones', 'Soft pastels', 'Metallic gradients', 'Vibrant neon', 'Monochromatic'
-  ];
-  const defaultPromptResolutionOptions = [
-    '4K', '8K', 'Full HD'
-  ];
-  const defaultPromptFramingOptions = [
-    'Portrait', 'Close-up', 'Wide shot', 'Dynamic angle', 'Flat lay'
-  ];
-  const defaultPromptOutputStyleOptions = [
-    'Visual Quality: Commercial-grade clarity - Realism Rule: High-fidelity photo realism',
-    'Visual Quality: Artistic interpretation - Realism Rule: Painterly realism',
-    'Visual Quality: Hyper-realistic - Realism Rule: Cinematic grade',
-    'Visual Quality: Soft focus - Realism Rule: Dreamlike quality',
-    'Visual Quality: Sharp, crisp - Realism Rule: Editorial style'
-  ];
+  // Effect to load prompt data from JSON
+  useEffect(() => {
+    const loadPromptData = async () => {
+      try {
+        setIsLoadingOptions(true);
+        setErrorLoadingOptions(false);
+        
+        // Try to fetch from public directory first
+        const response = await fetch('/prompts.json');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        // Validate the data structure
+        if (!data || !data.options || !data.creativeNames || !data.prompts) {
+          throw new Error('Invalid data structure in prompts.json');
+        }
+        
+        setAllPromptsData(data);
+        console.log('Successfully loaded prompt data');
+      } catch (error) {
+        console.error("Failed to load prompt data:", error);
+        setErrorLoadingOptions(true);
+        // Show more detailed error message
+        alert(`Failed to load prompt data: ${error.message}. Please check if prompts.json exists in the public directory.`);
+      } finally {
+        setIsLoadingOptions(false);
+      }
+    };
+    loadPromptData();
+  }, []);
 
-  // Creative prompt names array
-  const creativePromptNames = [
-    "Aurora Glow",
-    "Zenith Bloom",
-    "Lunar Radiance",
-    "Velvet Mist",
-    "Crystal Dew",
-    "Ethereal Silk",
-    "Terra Whisper",
-    "Solar Kiss",
-    "Oceanic Serenity",
-    "Stardust Veil",
-    "Mystic Bloom",
-    "Glimmering Stone",
-    "Aqua Aura",
-    "Chromatic Dream",
-    "Cosmic Petal",
-    "Infinite Fresh",
-    "Echoing Light",
-    "Silent Stream",
-    "Celestial Touch",
-    "Timeless Essence"
-  ];
+  // Effect to shuffle arrays when allPromptsData are loaded or randomizeKey changes
+  useEffect(() => {
+    if (allPromptsData && allPromptsData.options && allPromptsData.creativeNames) {
+      // Use options and creativeNames directly from loaded JSON
+      setShuffledLightingOptions(shuffleArray([...allPromptsData.options.lighting]));
+      setShuffledSceneOptions(shuffleArray([...allPromptsData.options.scenes]));
+      setShuffledMoodEmotionOptions(shuffleArray([...allPromptsData.options.moodEmotions]));
+      setShuffledFontStyleOptions(shuffleArray([...allPromptsData.options.fontStyles]));
+      setShuffledFontColorOptions(shuffleArray([...allPromptsData.options.fontColors]));
+      setShuffledResolutionOptions(shuffleArray([...allPromptsData.options.resolutions]));
+      setShuffledFramingOptions(shuffleArray([...allPromptsData.options.framings]));
+      setShuffledOutputStyleOptions(shuffleArray([...allPromptsData.options.outputStyles]));
+      setCreativePromptNames(shuffleArray([...allPromptsData.creativeNames])); // Creative names are also shuffled
+    }
+  }, [allPromptsData, randomizeKey]); // Re-shuffle when allPromptsData are loaded or randomizeKey changes
 
   /**
-   * Generates a cosmetic prompt string based on the prompt number and selected parameters.
-   * @param {number} i - The prompt number.
+   * Generates a cosmetic prompt string based on the prompt's data and selected global parameters.
+   * @param {object} promptData - The specific prompt object from the JSON array.
    * @param {string} currentOverlayText - Custom text to include as an overlay.
-   * @param {string} currentAspectRatio - Selected aspect ratio.
-   * @param {string} currentCameraLens - Selected camera lens.
-   * @param {string} selectedGlobalLighting - Selected lighting style (or default).
+   * @param {string} currentAspectRatio - Selected aspect ratio from global controls.
+   * @param {string} currentCameraLens - Selected camera lens from global controls.
+   * @param {string} selectedGlobalLighting - Selected lighting style from global controls (or default).
    * @returns {string} The generated prompt string.
    */
-  const generatePrompt = (
-    i,
-    currentOverlayText,
-    currentAspectRatio,
-    currentCameraLens,
-    selectedGlobalLighting
+  const generatePrompt = useCallback((
+    promptData, // Now takes the full prompt object
+    currentOverlayTextParam, // Renamed parameter to avoid confusion
+    currentAspectRatioParam,
+    currentCameraLensParam,
+    selectedGlobalLightingParam
   ) => { 
-    const hasOverlay = currentOverlayText && currentOverlayText.trim() !== '';
+    if (!allPromptsData || shuffledLightingOptions.length === 0) return ''; // Don't generate if data isn't ready
+
+    const hasOverlay = currentOverlayTextParam && currentOverlayTextParam.trim() !== '';
     
-    // Use default lighting if 'DEFAULT_PROMPT_LIGHTING' is selected globally
-    const lightingToUse = selectedGlobalLighting === 'DEFAULT_PROMPT_LIGHTING' 
-      ? defaultPromptLightingOptions[(i - 1) % defaultPromptLightingOptions.length] 
-      : selectedGlobalLighting;
+    // Use selected global lighting, or the shuffled default if 'DEFAULT_PROMPT_LIGHTING'
+    const lightingToUse = selectedGlobalLightingParam === 'DEFAULT_PROMPT_LIGHTING' 
+      ? shuffledLightingOptions[promptData.parameters.lightingIndex % shuffledLightingOptions.length] 
+      : selectedGlobalLightingParam;
 
-    // Scene is always taken from defaultPromptSceneOptions array, no user selection
-    const sceneToUse = defaultPromptSceneOptions[(i - 1) % defaultPromptSceneOptions.length];
-
-    // Mood & emotion is always taken from defaultPromptMoodEmotionOptions array, no user selection
-    const moodEmotionToUse = defaultPromptMoodEmotionOptions[(i - 1) % defaultPromptMoodEmotionOptions.length];
-
-    // Dynamic parameters' usage (always taken from default arrays, no global selection)
-    const fontStyleToUse = defaultPromptFontStyleOptions[(i - 1) % defaultPromptFontStyleOptions.length];
-    const fontColorToUse = defaultPromptFontColorOptions[(i - 1) % defaultPromptFontColorOptions.length];
-    const resolutionToUse = defaultPromptResolutionOptions[(i - 1) % defaultPromptResolutionOptions.length];
-    const framingToUse = defaultPromptFramingOptions[(i - 1) % defaultPromptFramingOptions.length];
-    const outputStyleToUse = defaultPromptOutputStyleOptions[(i - 1) % defaultPromptOutputStyleOptions.length];
+    // Get values from shuffled arrays using indices from promptData
+    const sceneToUse = shuffledSceneOptions[promptData.sceneDescriptionIndex % shuffledSceneOptions.length];
+    const moodEmotionToUse = shuffledMoodEmotionOptions[promptData.moodEmotionIndex % shuffledMoodEmotionOptions.length];
+    const fontStyleToUse = shuffledFontStyleOptions[promptData.parameters.fontStyleIndex % shuffledFontStyleOptions.length];
+    const fontColorToUse = shuffledFontColorOptions[promptData.parameters.fontColorIndex % shuffledFontColorOptions.length];
+    const resolutionToUse = shuffledResolutionOptions[promptData.parameters.resolutionIndex % shuffledResolutionOptions.length];
+    const framingToUse = shuffledFramingOptions[promptData.parameters.framingIndex % shuffledFramingOptions.length];
+    const outputStyleToUse = shuffledOutputStyleOptions[promptData.outputStyleIndex % shuffledOutputStyleOptions.length];
 
 
-    return `${hasOverlay ? `[PARAMETERS]\nOverlay Text: ${currentOverlayText}` : `[PARAMETERS]`}\nAspect Ratio: ${currentAspectRatio}\nFont Style: ${fontStyleToUse}\nFont Color: ${fontColorToUse}\nResolution: ${resolutionToUse}\nCamera Lens: ${currentCameraLens}\nFraming: ${framingToUse}\nLighting: ${lightingToUse}\n\n[DESCRIPTION]\nCreate a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.\n\n[PRODUCT INTEGRITY]\n- Use the uploaded product image exactly as it is.\n- Do not change the label, shape, or design.\n- Preserve original lighting, text, and reflections.\n\n[SCENE]\n- ${sceneToUse}\n\n[MOOD & EMOTION]\n- ${moodEmotionToUse}\n\n[OUTPUT STYLE]\n- ${outputStyleToUse}`;
-  };
+    return `${hasOverlay ? `[PARAMETERS]\nOverlay Text: ${currentOverlayTextParam}` : `[PARAMETERS]`}\nAspect Ratio: ${currentAspectRatioParam}\nFont Style: ${fontStyleToUse}\nFont Color: ${fontColorToUse}\nResolution: ${resolutionToUse}\nCamera Lens: ${currentCameraLensParam}\nFraming: ${framingToUse}\nLighting: ${lightingToUse}\n\n[DESCRIPTION]\n${promptData.promptDescription}\n\n[PRODUCT INTEGRITY]\n${promptData.productIntegrityRequirements.map(req => `- ${req}`).join('\n')}\n\n[SCENE]\n- ${sceneToUse}\n\n[MOOD & EMOTION]\n- ${moodEmotionToUse}\n\n[OUTPUT STYLE]\n- ${outputStyleToUse}`;
+  }, [selectedLighting, overlayText, selectedAspectRatio, selectedCameraLens, allPromptsData, // Dependencies for useCallback
+      shuffledLightingOptions, shuffledSceneOptions, shuffledMoodEmotionOptions, 
+      shuffledFontStyleOptions, shuffledFontColorOptions, shuffledResolutionOptions, 
+      shuffledFramingOptions, shuffledOutputStyleOptions]); 
 
   /**
    * Generates the original prompt text for each prompt.
-   * This function uses fixed default values, independent of control panel selections.
-   * @param {number} i - The prompt number.
+   * This function uses fixed default values from the original loaded JSON data.
+   * @param {object} originalPromptData - The specific original prompt object from the JSON array.
    * @returns {string} The original prompt string.
    */
-  const getOriginalPromptText = (i) => {
-    // Fixed default values for original prompt
-    const originalAspectRatio = '1:1'; // Original default from HTML
-    const originalCameraLens = '85mm'; // Original default from HTML
-    const originalLighting = defaultPromptLightingOptions[(i - 1) % defaultPromptLightingOptions.length]; // Each prompt's default lighting
-    const originalScene = defaultPromptSceneOptions[(i - 1) % defaultPromptSceneOptions.length]; // Each prompt's default scene
-    const originalMoodEmotion = defaultPromptMoodEmotionOptions[(i - 1) % defaultPromptMoodEmotionOptions.length]; // Each prompt's default mood and emotion
+  const getOriginalPromptText = useCallback((originalPromptData) => {
+    if (!allPromptsData) return ''; // Don't generate if data isn't loaded yet
 
-    // Dynamic parameters' original values (always taken from default arrays)
-    const originalFontStyle = defaultPromptFontStyleOptions[(i - 1) % defaultPromptFontStyleOptions.length];
-    const originalFontColor = defaultPromptFontColorOptions[(i - 1) % defaultPromptFontColorOptions.length];
-    const originalResolution = defaultPromptResolutionOptions[(i - 1) % defaultPromptResolutionOptions.length];
-    const originalFraming = defaultPromptFramingOptions[(i - 1) % defaultPromptFramingOptions.length];
-    const originalOutputStyle = defaultPromptOutputStyleOptions[(i - 1) % defaultPromptOutputStyleOptions.length];
+    // Get values from original (unshuffled) options arrays using indices from originalPromptData
+    const originalLighting = allPromptsData.options.lighting[originalPromptData.parameters.lightingIndex]; 
+    const originalScene = allPromptsData.options.scenes[originalPromptData.sceneDescriptionIndex]; 
+    const originalMoodEmotion = allPromptsData.options.moodEmotions[originalPromptData.moodEmotionIndex]; 
+    const originalFontStyle = allPromptsData.options.fontStyles[originalPromptData.parameters.fontStyleIndex];
+    const originalFontColor = allPromptsData.options.fontColors[originalPromptData.parameters.fontColorIndex];
+    const originalResolution = allPromptsData.options.resolutions[originalPromptData.parameters.resolutionIndex];
+    const originalFraming = allPromptsData.options.framings[originalPromptData.parameters.framingIndex];
+    const originalOutputStyle = allPromptsData.options.outputStyles[originalPromptData.outputStyleIndex];
 
     // OverlayText was not in original prompt, so leaving it empty.
-    return `[PARAMETERS]\nAspect Ratio: ${originalAspectRatio}\nFont Style: ${originalFontStyle}\nFont Color: ${originalFontColor}\nResolution: ${originalResolution}\nCamera Lens: ${originalCameraLens}\nFraming: ${originalFraming}\nLighting: ${originalLighting}\n\n[DESCRIPTION]\nCreate a cosmetic ad featuring the product in a styled and emotionally engaging environment that fits modern branding needs.\n\n[PRODUCT INTEGRITY]\n- Use the uploaded product image exactly as it is.\n- Do not change the label, shape, or design.\n- Preserve original lighting, text, and reflections.\n\n[SCENE]\n- ${originalScene}\n\n[MOOD & EMOTION]\n- ${originalMoodEmotion}\n\n[OUTPUT STYLE]\n- ${originalOutputStyle}`;
-  };
+    return `[PARAMETERS]\nAspect Ratio: ${originalPromptData.parameters.aspectRatio}\nFont Style: ${originalFontStyle}\nFont Color: ${originalFontColor}\nResolution: ${originalResolution}\nCamera Lens: ${originalPromptData.parameters.cameraLens}\nFraming: ${originalFraming}\nLighting: ${originalLighting}\n\n[DESCRIPTION]\n${originalPromptData.promptDescription}\n\n[PRODUCT INTEGRITY]\n${originalPromptData.productIntegrityRequirements.map(req => `- ${req}`).join('\n')}\n\n[SCENE]\n- ${originalScene}\n\n[MOOD & EMOTION]\n- ${originalMoodEmotion}\n\n[OUTPUT STYLE]\n- ${originalOutputStyle}`;
+  }, [allPromptsData]); // Dependency on allPromptsData
 
   // Function to copy text to clipboard
   const copyToClipboard = (text, buttonElement, originalButtonText) => {
@@ -209,9 +190,6 @@ const App = () => {
       document.body.removeChild(textarea);
     }
   };
-
-  // Array to generate 20 prompt numbers
-  const promptNumbers = Array.from({ length: 20 }, (_, i) => i + 1);
 
   return (
     // Main container with Tailwind CSS for styling
@@ -262,7 +240,7 @@ const App = () => {
                   <option value="4:5">4:5 (Portrait)</option>
                   <option value="16:9">16:9 (Landscape)</option>
                 </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={20} />
+                <ChevronDownIcon className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={20} />
               </div>
             </div>
 
@@ -280,7 +258,7 @@ const App = () => {
                   <option value="50mm">50mm (Standard)</option>
                   <option value="24mm">24mm (Wide Angle)</option>
                 </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={20} />
+                <ChevronDownIcon className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={20} />
               </div>
             </div>
 
@@ -295,28 +273,38 @@ const App = () => {
                   className="w-full p-3 rounded-xl bg-gray-800/60 border border-purple-700 text-gray-100 focus:outline-none focus:ring-4 focus:ring-purple-500 transition-all duration-300 text-lg shadow-inner-dark appearance-none pr-10 custom-select placeholder-gray-500"
                 >
                   <option value="DEFAULT_PROMPT_LIGHTING">Default (Per Prompt)</option>
-                  {defaultPromptLightingOptions.map((option, index) => (
+                  {allPromptsData && allPromptsData.options.lighting.map((option, index) => ( // Use loaded options
                     <option key={index} value={option}>{option}</option>
                   ))}
                 </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={20} />
+                <ChevronDownIcon className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" size={20} />
               </div>
             </div>
-            {/* Removed Font Style, Font Color, Resolution, Framing, Mood & Emotion, Output Style dropdowns */}
           </div>
+          
+          {/* Randomize All Prompts Button */}
+          <button
+            onClick={() => setRandomizeKey(prev => prev + 1)} // Increment key to trigger re-shuffle
+            className="flex items-center justify-center gap-2 px-6 py-3 rounded-full shadow-lg text-white font-semibold relative overflow-hidden z-10 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 text-base
+              bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 focus:outline-none focus:ring-4 focus:ring-blue-300 button-glow"
+          >
+            <Dice5 size={24} /> Randomize All Prompts
+          </button>
         </div>
       </div>
 
       {/* Prompt Grid (List View) */}
       <div className="flex flex-col gap-8 w-full max-w-5xl mx-auto relative z-10"> {/* Wider max-width */}
-        {promptNumbers.map((num) => {
+        {allPromptsData && allPromptsData.prompts.map((promptData, index) => { // Iterate over loaded prompt data
+          // State for individual prompt expansion
+          const isExpanded = expandedPrompts[index] || false;
+
           const promptCode = generatePrompt(
-            num,
+            promptData, // Pass the full promptData object
             overlayText,
             selectedAspectRatio,
             selectedCameraLens,
             selectedLighting
-            // Removed parameters for Font Style, Font Color, Resolution, Framing, Mood & Emotion, Output Style
           );
           const imgWidth = selectedAspectRatio === '1:1' ? 1000 : (selectedAspectRatio === '4:5' ? 800 : 1600);
           const imgHeight = selectedAspectRatio === '1:1' ? 1000 : (selectedAspectRatio === '4:5' ? 1000 : 900);
@@ -324,18 +312,23 @@ const App = () => {
           return (
             // Individual Prompt Card (List Item)
             <div
-              key={num}
+              key={promptData.id} // Use UUID as key
               className="bg-gray-900/70 backdrop-blur-lg rounded-3xl shadow-xl p-6 flex flex-col md:flex-row gap-6 items-center transition-all duration-300 transform hover:scale-103 hover:shadow-blue-500/30 border border-gray-700 relative overflow-hidden group animate-fade-in-up"
             >
+              {/* Number Badge */}
+              <div className="absolute -top-2 -left-2 w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg border-2 border-gray-800 z-30">
+                #{index + 1}
+              </div>
+
               {/* Card Corner Effect and Inner Glow */}
               <div className="absolute inset-0 rounded-3xl pointer-events-none z-20" style={{ border: '1px solid rgba(100, 100, 100, 0.2)', boxShadow: 'inset 0 0 10px rgba(0,200,255,0.05)' }}></div>
 
               {/* Example Image Area */}
-              <div className="w-full md:w-1/3 h-48 flex-shrink-0 bg-gray-800 rounded-xl overflow-hidden flex items-center justify-center border border-gray-700 group-hover:border-blue-500 transition-colors duration-300 relative aspect-w-16 aspect-h-9 md:aspect-w-auto md:aspect-h-auto">
+              <div className="w-full md:w-1/3 flex-shrink-0 bg-gray-800 rounded-xl overflow-hidden flex items-center justify-center border border-gray-700 group-hover:border-blue-500 transition-colors duration-300 relative aspect-w-16 aspect-h-9"> {/* Max 9:16 aspect ratio enforced */}
                 <img
                   src={`https://placehold.co/${imgWidth}x${imgHeight}/1A202C/93C5FD?text=AR%3A+${selectedAspectRatio}`}
-                  alt={`Example for Prompt ${num}`}
-                  className="w-full h-full object-cover rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  alt={`Example for Prompt ${promptData.promptTitleIndex}`}
+                  className="w-full h-full object-contain rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300" // object-contain kullanıldı
                   onError={(e) => {
                     e.target.onerror = null;
                     e.target.src = `https://placehold.co/400x200/1A202C/FF0000?text=Image+Unavailable`;
@@ -348,12 +341,31 @@ const App = () => {
               {/* Prompt Content and Buttons */}
               <div className="flex flex-col flex-grow w-full md:w-2/3">
                 {/* Card Title */}
-                <h2 className="text-2xl font-bold text-purple-400 mb-3 group-hover:text-blue-400 transition-colors duration-300">{creativePromptNames[num - 1]}</h2> {/* Creative name used here */}
+                <h2 className="text-2xl font-bold text-purple-400 mb-3 group-hover:text-blue-400 transition-colors duration-300">{allPromptsData.creativeNames[promptData.promptTitleIndex]}</h2> {/* Use promptTitle from JSON */}
 
                 {/* Prompt Code Display */}
-                <pre className="bg-gray-800/60 p-4 rounded-xl text-sm font-mono overflow-x-auto whitespace-pre-wrap break-words flex-grow mb-4 text-gray-300 border border-gray-700 group-hover:border-blue-600 transition-colors duration-300 shadow-inner-dark">
+                <pre 
+                  className={`bg-gray-800/60 p-4 rounded-xl text-sm font-mono whitespace-pre-wrap break-words mb-4 text-gray-300 border border-gray-700 group-hover:border-blue-600 transition-colors duration-300 shadow-inner-dark 
+                  ${isExpanded ? '' : 'max-h-[12rem] overflow-hidden'}`} // Fixed height and overflow
+                >
                   {promptCode}
                 </pre>
+                
+                {/* Expand/Collapse Button for Prompt Text */}
+                <button
+                  onClick={() => setExpandedPrompts(prev => ({ ...prev, [index]: !prev[index] }))}
+                  className="self-start text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm font-semibold flex items-center gap-1 mb-4"
+                >
+                  {isExpanded ? (
+                    <>
+                      Show Less <ChevronUpIcon size={16} />
+                    </>
+                  ) : (
+                    <>
+                      Show Full Prompt <ChevronDownIcon size={16} />
+                    </>
+                  )}
+                </button>
 
                 {/* Buttons */}
                 <div className="flex flex-row gap-3 mt-auto flex-wrap sm:flex-nowrap"> {/* Buttons always on one line */}
@@ -375,7 +387,7 @@ const App = () => {
                   {/* Copy Original & Open ChatGPT Button */}
                   <button
                     onClick={(e) => { 
-                      copyToClipboard(getOriginalPromptText(num), e.target, 'Copy Original & Open GPT'); 
+                      copyToClipboard(getOriginalPromptText(promptData), e.target, 'Copy Original & Open GPT'); // Pass promptData object
                       window.open('https://chat.openai.com/chat', '_blank'); 
                     }}
                     className="flex-1 flex items-center justify-center gap-1 px-3 py-2.5 rounded-full shadow-lg text-white font-semibold relative overflow-hidden z-10 transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0 text-sm
